@@ -1,0 +1,97 @@
+body {
+    background-color: black;
+    color: gray;
+    font-size: 25px;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+.icons {
+    position: absolute;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+.red {
+    color: crimson;
+}
+
+#home {
+    margin-top: 15%;
+    text-align: center;
+}
+
+#prof {
+    border-radius: 50%;
+}
+
+.href {
+    color: gray;
+    text-decoration: none;
+}
+
+.href:hover {
+    color: darkgray
+}
+
+#about {
+    margin-top: 15%;
+}
+
+#skills {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.progress {
+    height: 10px;
+}
+
+.bio {
+    font-size: 20px;
+    color: white;
+    /* text-align: center; */
+}
+
+.bio hr {
+    width: 80%;
+    margin: 10px 0;
+}
+
+.set-border {
+    border-bottom: 5px solid crimson;
+}
+
+.card-img-top {
+    border-radius: 50%;
+}
+
+.card {
+    background-color: transparent;
+    align-self: center;
+}
+
+#my-skill {
+    align-self: center;
+}
+
+.list-unstyled {
+    list-style: none;
+}
+
+.social li {
+    display: inline-block;
+    margin: 0 10px;
+}

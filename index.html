@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arjun Dave</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="text-align: center; background-color: black;">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                    <li class="nav-item" onclick="showHome()">
+                        <a class="nav-link set-border" id="homeButton" aria-current="page" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Home</a>
+                    </li>
+                    <li class="nav-item" onclick="showAbout()">
+                        <a class="nav-link" id="aboutButton" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">About</a>
+                    </li>
+                    <li class="nav-item" onclick="showSkills()">
+                        <a class="nav-link" id="skillButton" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">My Skills</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mb-5" id="home" #home>
+        <div class="row p-2">
+            <div class="col-md-6 mt-5">
+                <h1><span>Hi! I am</span><br><b class="red"> ARJUN DAVE</b></h1><br>
+                <h3>A Student and web enthusiast</h3><br>
+                <h4>Want to know more about me?</h4>
+                <ul class="social list-unstyled pt-1 mb-5">
+                    <li class="facebook"><a title="Github" href="https://github.com/arjund-06"><i class="fa fa-github href"></i></a>
+                    </li>
+                    <li class="youtube"><a title="Linkedin" href="https://www.linkedin.com/in/arjundave25/"><i class="fa fa-linkedin href"></i></a>
+                    </li>
+                    <li class="dribbble"><a title="Instagram" href="https://www.instagram.com/arjund_06/"><i class="fa fa-instagram href"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-5 p-2">
+                <img src="pics/ArjunDave.jpg" alt="Prof" height="350px" id="prof">
+            </div>
+        </div>
+    </div>
+
+    <div class="container hide" id="about" #about>
+        <div class="row p-2">
+            <div class="col-md-11" style="margin-right: 0;">
+                <h2 class="red"><b>ABOUT ME</b></h2>
+                <p>I am a student currently doing my Bachelors degree in Computer Science and Egineering from Sathyabama Institute of Science and Technology, Chennai. I have very good experience in web development using Angular framework.I have good programming
+                    experience in Python, Flask and also Java, C and C++. I have worked with Firebase and SQl database systems. I am a very quick learner and a friendly worker.</p>
+                <hr>
+                <div class="container mt-5">
+                    <h2 class="red">BIO DATA</h2>
+                    <div class="row bio">
+                        <div class="col-lg-6 mt-3">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h4 class="red mt-1">Name:</h4>
+                                </div>
+                                <div class="col-md-4 mt-1" style="width: fit-content;">
+                                    ARJUN DAVE
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h4 class="red mt-1">DOB:</h4>
+                                </div>
+                                <div class="col-md-4 mt-1">
+                                    25-10-2001
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h4 class="red mt-1">City:</h4>
+                                </div>
+                                <div class="col-md-4 mt-1">
+                                    CHENNAI
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 mt-3">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h4 class="red mt-1">E-mail:</h4>
+                                </div>
+                                <div class="col-md-3 mt-1">
+                                    davearjun25@gmail.com
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h4 class="red mt-1">College:</h4>
+                                </div>
+                                <div class="col-md-3 ml-1 mt-1" style="width: 70%;">
+                                    Sathyabama University
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h4 class="red mt-1">Nationality:</h4>
+                                </div>
+                                <div class="col-md-2 mt-1">
+                                    INDIAN
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <div class="container mt-5">
+                    <div class="row">
+                        <h2 class="red">EDUCATION</h2>
+                        <div class="col-md-12 mt-4">
+                            <h3 class="red">DON BOSCO MAT. HR. SEC. SCHOOL, EGMORE, CHENNAI</h3>
+                            <h4 class="mt-3 red"> - <u>2017</u></h4>
+                            <h4><u><b> SSLC Examination</b></u> - <span class="red">88%</span></h4>
+                            <h4 class="mt-3 red"> - <u>2019</u></h4>
+                            <h4><u><b>HSE +2 Examination</b></u> - <span class="red">76%</span></h4>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-12 mt-4">
+                            <h3 class="red">SATHYABAMA INSTITUTE OF SCIENCE AND TECHNOLOGY, CHENNAI</h3>
+                            <h4 class="mt-3 red"> - <u>2020</u></h4>
+
+
+                            <h4><b><u> Semester Examination</u> - 4th Semester</b> - <span class="red">9.2 CGPA</span></h4>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="container mt-5 hide" style="max-width: 1080px;" id="skills" #skills>
+        <h2 class="red">MY SKILLS</h2>
+        <div class="row mx-auto" style="align-content: center;">
+            <!-- <div class="col-md-12" style="text-align: center; align-content: center;"> -->
+            <div class="col my-4 mx-auto" id="my-skill">
+                <div class="card" style="width: 13rem;">
+                    <img src="pics/Angular.png" class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h3 style="color: crimson">Angular</h3>
+                        <div class="progress mt-2">
+                            <div class="progress-bar w-75 bg-danger" style="width:85%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p class="card-text mt-2 text-white">85%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col my-4 mx-auto">
+                <div class="card" style="width: 13rem;">
+                    <img src="pics/firebase.png" class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h3 style="color: #FFA713;">Firebase</h3>
+                        <div class="progress mt-2">
+                            <div class="progress-bar" style="background-color: #FFA713; width: 80%;" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p class="card-text mt-2 text-white">80%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col my-4 mx-auto">
+                <div class="card" style="width: 13rem;">
+                    <img src="pics/Js.png" class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h3 style="color: #F0DB4F;">JavaScript</h3>
+                        <div class="progress mt-2">
+                            <div class="progress-bar" style="background-color: #F0DB4F; width: 80%;" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p class="card-text mt-2 text-white">80%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col my-4 mx-auto">
+                <div class="card" style="width: 13rem;">
+                    <img src="pics/HTML.jpg" class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h3 style="color:#DC4A23 ;">HTML</h3>
+                        <div class="progress mt-2">
+                            <div class="progress-bar" style="background-color: #DC4A23; width: 90%;" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p class="card-text mt-2 text-white">90%</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="w-100"></div> -->
+
+            <div class="col my-4 mx-auto">
+                <div class="card" style="width: 13rem;">
+                    <img src="pics/css.svg" class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h3 style="color:#1572B6 ;">CSS</h3>
+                        <div class="progress mt-2">
+                            <div class="progress-bar" style="background-color: #1572B6; width: 75%;" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p class="card-text mt-2 text-white">75%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col my-4 mx-auto">
+                <div class="card" style="width: 13rem;">
+                    <img src="pics/python.png" class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h3 style="color:#4479A1 ;">Python</h3>
+                        <div class="progress mt-2">
+                            <div class="progress-bar" style="background-color: #4479A1; width: 85%;" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p class="card-text mt-2 text-white">85%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col my-4 mx-auto">
+                <div class="card" style="width: 13rem;">
+                    <img src="pics/SQL.png" class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h3 style="color:#4479A1 ;">SQL</h3>
+                        <div class="progress mt-2">
+                            <div class="progress-bar" style="background-color: #4479A1; width: 50%;" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p class="card-text mt-2 text-white">50%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col my-4 mx-auto">
+                <div class="card" style="width: 13rem;">
+                    <img src="pics/flask.jpg" class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                        <h3 style="color:green ;">Flask</h3>
+                        <div class="progress mt-2">
+                            <div class="progress-bar" style="background-color:green; width: 70%;" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p class="card-text mt-2 text-white">70%</p>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+        </div>
+    </div>
+
+    <div style="height: 35px;"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
