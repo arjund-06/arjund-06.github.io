@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arjun Dave</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
+    <!-- The Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="text-align: center; background-color: black;">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,17 +30,22 @@
                     <li class="nav-item" onclick="showSkills()">
                         <a class="nav-link" id="skillButton" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">My Skills</a>
                     </li>
+                    <li class="nav-item" onclick="showContact()">
+                        <a class="nav-link" id="contactButton" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Contact Me</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <!-- Navbar Ends here -->
 
+    <!-- Home page -->
     <div class="container mb-5" id="home" #home>
         <div class="row p-2">
             <div class="col-md-6 mt-5">
                 <h1><span>Hi! I am</span><br><b class="red"> ARJUN DAVE</b></h1><br>
                 <h3>A Student and web enthusiast</h3><br>
-                <h4>Want to know more about me?</h4>
+                <h4 class="href" onclick="showAbout()">Want to know more about me?</h4>
                 <ul class="social list-unstyled pt-1 mb-5">
                     <li class="facebook"><a title="Github" href="https://github.com/arjund-06"><i class="fa fa-github href"></i></a>
                     </li>
@@ -54,7 +60,9 @@
             </div>
         </div>
     </div>
+    <!-- Home page ends here -->
 
+    <!-- About page -->
     <div class="container hide" id="about" #about>
         <div class="row p-2">
             <div class="col-md-11" style="margin-right: 0;">
@@ -150,7 +158,7 @@
                             <h4 class="mt-3 red"> - <u>2020</u></h4>
 
 
-                            <h4><b><u> Semester Examination</u> - 4th Semester</b> - <span class="red">9.2 CGPA</span></h4>
+                            <h4><b><u> Semester Examination</u> - 3rd Semester</b> - <span class="red">9.2 CGPA</span></h4>
                         </div>
                     </div>
                 </div>
@@ -159,8 +167,10 @@
             </div>
         </div>
     </div>
+    <!-- About page ends here -->
     <br>
 
+    <!-- Skills page -->
     <div class="container mt-5 hide" style="max-width: 1080px;" id="skills" #skills>
         <h2 class="red">MY SKILLS</h2>
         <div class="row mx-auto" style="align-content: center;">
@@ -273,8 +283,67 @@
             <!-- </div> -->
         </div>
     </div>
+    <!-- Skills ends here -->
 
+    <div class="container mt-5 hide" id="contact">
+        <h2 class="red">CONTACT ME</h2>
+        <div class="row mt-5">
+            <div class="col-md-4" style="font-size: 20px;">
+                <h5>Feel free to contact me. If you have any message for me or anything you want to ask, type it down here and i shall reply in no time :)</h5>
+                <br>
+                <div class="row">
+                    <div class="col-1 mt-3">
+                        <span class="material-icons">
+                        mail_outline
+                        </span>
+                    </div>
+                    <div class="col-11">
+                        <span class="red"><b>Mail me</b></span>:<br><a class="href" href="mailto:davearjun25@gmail.com">davearjun25@gmail.com</a>
+                    </div>
+                </div>
+
+
+                <ul class="social list-unstyled pt-1 mb-5 mt-3">
+                    <li class="facebook"><a title="Github" href="https://github.com/arjund-06"><i class="fa fa-github href"></i></a>
+                    </li>
+                    <li class="youtube"><a title="Linkedin" href="https://www.linkedin.com/in/arjundave25/"><i class="fa fa-linkedin href"></i></a>
+                    </li>
+                    <li class="dribbble"><a title="Instagram" href="https://www.instagram.com/arjund_06/"><i class="fa fa-instagram href"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <form id="contact-form">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control input" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="col">
+                            <input type="email" class="form-control input" id="email" placeholder="Your Email">
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col-12 mt-2" style="width: 100%;">
+                        <textarea class="form-control input" placeholder="Your Message" id="message" rows="10"></textarea>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="mt-2">
+                        <button type="button" id="sendMessage" class="btn btn-danger" onclick="sendEmail()">Send Message</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
     <div style="height: 35px;"></div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <!-- <script type="text/javascript">
+        (function() {
+            emailjs.init("user_wcK7McpCmQM7d7LocqXE5");
+        })();
+    </script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
