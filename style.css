@@ -5,6 +5,10 @@ body {
     cursor: default;
 }
 
+.nav-item {
+    font-weight: bold;
+}
+
 .nav-item:hover {
     cursor: pointer;
 }
