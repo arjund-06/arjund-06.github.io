@@ -46,8 +46,19 @@ h2 {
     font-size: 40px;
 }
 
+th,
 .red {
     color: crimson;
+}
+
+table {
+    width: fit-content;
+}
+
+th,
+td {
+    font-size: 20px;
+    padding: 4px;
 }
 
 #home {
@@ -61,7 +72,7 @@ h2 {
 
 .href {
     color: gray;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .href:hover {
@@ -139,4 +150,8 @@ h2 {
 
 .btn-danger:hover {
     background-color: rgba(220, 20, 60, 0.593);
+}
+
+.eventItems {
+    border: 1px solid crimson;
 }
