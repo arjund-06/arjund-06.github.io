@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: whitesmoke;
     color: gray;
     font-size: 25px;
     cursor: default;
@@ -30,9 +30,20 @@ body::-webkit-scrollbar-thumb:hover {
     cursor: pointer;
 }
 
-.hide {
-    display: none;
+div {
+    /* min-height: 100%; */
+    opacity: 0;
 }
+
+.show {
+    opacity: 1;
+    transition: 0.81s;
+}
+
+
+/* .hide {
+    display: none;
+} */
 
 .icons {
     position: absolute;
@@ -95,7 +106,7 @@ td {
 
 .bio {
     font-size: 20px;
-    color: white;
+    /* color: white; */
     /* text-align: center; */
 }
 
@@ -131,10 +142,10 @@ td {
 }
 
 #contact-form .input {
-    background-color: rgb(29, 29, 29);
-    color: crimson;
+    /* background-color: rgba(41, 41, 41, 0.866); */
+    /* color: crimson; */
     /* font-weight: bold; */
-    border: none;
+    border: 1px solid crimson;
 }
 
 .form-control:focus {
