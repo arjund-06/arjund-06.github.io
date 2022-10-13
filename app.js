@@ -12,77 +12,92 @@ let contactMeBtn = document.getElementById("contactButton");
 
 const db = firebase.firestore();
 
-function showHome() {
-    home.classList.remove("hide");
-    about.classList.add("hide");
-    mySkills.classList.add("hide");
-    // events.classList.add("hide");
-    contactMe.classList.add("hide");
+// function showHome() {
+//     home.classList.remove("hide");
+//     about.classList.add("hide");
+//     mySkills.classList.add("hide");
+//     // events.classList.add("hide");
+//     contactMe.classList.add("hide");
 
-    homeBtn.classList.add("set-border");
-    aboutBtn.classList.remove("set-border");
-    mySkillsBtn.classList.remove("set-border");
-    // eventsBtn.classList.remove("set-border");
-    contactMeBtn.classList.remove("set-border");
-}
+//     homeBtn.classList.add("set-border");
+//     aboutBtn.classList.remove("set-border");
+//     mySkillsBtn.classList.remove("set-border");
+//     // eventsBtn.classList.remove("set-border");
+//     contactMeBtn.classList.remove("set-border");
+// }
 
-function showAbout() {
-    home.classList.add("hide");
-    about.classList.remove("hide");
-    mySkills.classList.add("hide");
-    // events.classList.add("hide");
-    contactMe.classList.add("hide");
+// function showAbout() {
+//     home.classList.add("hide");
+//     about.classList.remove("hide");
+//     mySkills.classList.add("hide");
+//     // events.classList.add("hide");
+//     contactMe.classList.add("hide");
 
-    homeBtn.classList.remove("set-border");
-    aboutBtn.classList.add("set-border");
-    mySkillsBtn.classList.remove("set-border");
-    // eventsBtn.classList.remove("set-border");
-    contactMeBtn.classList.remove("set-border");
-}
+//     homeBtn.classList.remove("set-border");
+//     aboutBtn.classList.add("set-border");
+//     mySkillsBtn.classList.remove("set-border");
+//     // eventsBtn.classList.remove("set-border");
+//     contactMeBtn.classList.remove("set-border");
+// }
 
-function showSkills() {
-    home.classList.add("hide");
-    about.classList.add("hide");
-    mySkills.classList.remove("hide");
-    // events.classList.add("hide");
-    contactMe.classList.add("hide");
+// function showSkills() {
+//     home.classList.add("hide");
+//     about.classList.add("hide");
+//     mySkills.classList.remove("hide");
+//     // events.classList.add("hide");
+//     contactMe.classList.add("hide");
 
-    homeBtn.classList.remove("set-border");
-    aboutBtn.classList.remove("set-border");
-    mySkillsBtn.classList.add("set-border");
-    // eventsBtn.classList.remove("set-border");
-    contactMeBtn.classList.remove("set-border");
-}
+//     homeBtn.classList.remove("set-border");
+//     aboutBtn.classList.remove("set-border");
+//     mySkillsBtn.classList.add("set-border");
+//     // eventsBtn.classList.remove("set-border");
+//     contactMeBtn.classList.remove("set-border");
+// }
 
-function showEvents() {
-    home.classList.add("hide");
-    about.classList.add("hide");
-    mySkills.classList.add("hide");
-    // events.classList.remove("hide");
-    contactMe.classList.add("hide");
+// function showEvents() {
+//     home.classList.add("hide");
+//     about.classList.add("hide");
+//     mySkills.classList.add("hide");
+//     // events.classList.remove("hide");
+//     contactMe.classList.add("hide");
 
-    homeBtn.classList.remove("set-border");
-    aboutBtn.classList.remove("set-border");
-    mySkillsBtn.classList.remove("set-border");
-    // eventsBtn.classList.add("set-border");
-    contactMeBtn.classList.remove("set-border");
+//     homeBtn.classList.remove("set-border");
+//     aboutBtn.classList.remove("set-border");
+//     mySkillsBtn.classList.remove("set-border");
+//     // eventsBtn.classList.add("set-border");
+//     contactMeBtn.classList.remove("set-border");
 
-    getEvents();
-}
+//     getEvents();
+// }
 
-function showContact() {
-    home.classList.add("hide");
-    about.classList.add("hide");
-    mySkills.classList.add("hide");
-    // events.classList.add("hide");
-    contactMe.classList.remove("hide");
+// function showContact() {
+//     home.classList.add("hide");
+//     about.classList.add("hide");
+//     mySkills.classList.add("hide");
+//     // events.classList.add("hide");
+//     contactMe.classList.remove("hide");
 
-    homeBtn.classList.remove("set-border");
-    aboutBtn.classList.remove("set-border");
-    mySkillsBtn.classList.remove("set-border");
-    // eventsBtn.classList.remove("set-border");
-    contactMeBtn.classList.add("set-border");
-}
+//     homeBtn.classList.remove("set-border");
+//     aboutBtn.classList.remove("set-border");
+//     mySkillsBtn.classList.remove("set-border");
+//     // eventsBtn.classList.remove("set-border");
+//     contactMeBtn.classList.add("set-border");
+// }
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show');
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll('div');
+hiddenElements.forEach((ele) => {
+    observer.observe(ele);
+});
 
 emailjs.init("user_wcK7McpCmQM7d7LocqXE5");
 form = document.getElementById('contact-form');
